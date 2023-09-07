@@ -1,0 +1,17 @@
+{
+  "name": "kysely-type-not-match",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Junya Kono",
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "kysely": "^0.26.3",
+    "pg": "^8.11.3"
+  }
+}
