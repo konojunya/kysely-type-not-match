@@ -5,9 +5,7 @@ async function main() {
     .selectFrom("users")
     .select((eb) => eb.fn.count<number>("id").as("count"))
     .limit(10)
-    .executeTakeFirst();
-
-  if (res == null) throw new Error("No result found");
+    .executeTakeFirstOrThrow();
 
   console.log(JSON.stringify(res, null, 2));
 
